@@ -17,7 +17,11 @@ The music on their website contain tags of genre and mood.  Since a song may be 
 ![The-Tellegen-Watson-Clark-model-of-mood-figure-reproduced-from51](https://user-images.githubusercontent.com/61879226/175502893-a29c9294-c5b2-4ce4-ac43-c0361d3469f0.png)
 
 ## Feature Extraction
-The timbre features can be helpful for multilabel mood prediction [ISMR2008](https://ismir2008.ismir.net/papers/ISMIR2008_275.pdf).
 
-In the last part of analysis.ipynb
+The timbre features can be helpful for multilabel mood prediction [ISMR2008](https://ismir2008.ismir.net/papers/ISMIR2008_275.pdf).
+ - 13 MFCC + spectral centroid + spectral rolloff + spectral flux (**16 features** in total) in each frame
+ - calculated the mean, standard deviation (std), mean standard deviation (mean std) and standard deviation
+of standard deviation (std std) over all frames. This led to a total of **64 timbre features**.
+
+In the last part of analysis.ipynb, I retrieved some timbre features using the method in the above study.  The computed features are along with the dataset.  
 
